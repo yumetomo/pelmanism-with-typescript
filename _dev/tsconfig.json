@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "allowJs": true,
+    "target": "es6", // TSはECMAScript5に変換(IE11、Android4.4もOK)
+    "module": "es2015", // TreeShakingのため
+    "moduleResolution": "node", // Node方式でモジュール解決
+    "lib": ["es2017", "es5", "es6", "es7", "dom", "dom.iterable"], // コンパイルに含めるライブラリファイル指定
+    // "downlevelIteration": true,
+    "typeRoots": [
+      "node_modules/@types", // デフォルトではここだけ読む 忘れず書き添える
+      "ts/types" // ここを読むように追記
+    ],
+    "jsx": "react", // .jsxファイルをReactファイルとしてコンパイル
+    "esModuleInterop": true // ES modules 形式以外のCommonJS 形式などのモジュールを default import 形式で読み込める　例）const module = require('module') -> import module from 'module'
+  },
+  "include": ["ts/**/*"],
+  "exclude": ["node_modules", "**/*.test.ts"]
+}
