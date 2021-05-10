@@ -43,7 +43,7 @@
   "dependencies": {
     "@types/lodash": "^4.14.138",
     "@types/velocity-animate": "^1.2.33",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "velocity-animate": "^1.5.2"
   }
 }
